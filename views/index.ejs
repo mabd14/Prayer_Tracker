@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/main.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="menu">
+        <% if (username) { %> 
+            <h1 id="welcome">Welcome <%=(username) %></h1>
+            <li><a href="tracker">Prayer Tracker</a></li>
+            <li><a href="logout">Logout</a></li>
+        <%} else { %>
+            <li><a href="register">Register</a></li>
+            <li><a href="login">Login</a></li>
+        <% } %>
+      </div>
+    </header>
+
+  <div class="index-content">
+    <p>Welcome to Prayer Tracker! <br> <br>The aim of is to help you keep track of your daily prayers!</p>
+  </div>
+
+
+  </body>
+</html>
